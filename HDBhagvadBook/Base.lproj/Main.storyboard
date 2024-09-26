@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GOV-ji-1te">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="HDBhagvadBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HD-wallpaper-shree-krishna-bhagavad-gita-lord-shiva-mahabharata-ramayan" translatesAutoresizingMaskIntoConstraints="NO" id="P26-b7-Dg3">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQa-Wp-CdE">
+                                <rect key="frame" x="68.666666666666686" y="507" width="256" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Jg5-8j-OiP"/>
+                                    <constraint firstAttribute="width" constant="256" id="LU8-er-YbD"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3204087317" green="0.1724791229" blue="0.47181248660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Bhagvad Gita">
+                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bhagvatGitaReadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZi-ka-fqr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-pN-J1J">
+                                <rect key="frame" x="68.666666666666686" y="615" width="256" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="AtI-Wh-phP"/>
+                                    <constraint firstAttribute="height" constant="62" id="itJ-0F-TC9"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3204087317" green="0.1724791229" blue="0.47181248660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Quotes">
+                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="quotesBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYK-Jb-eUM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyz-Y4-dMF">
+                                <rect key="frame" x="68.666666666666686" y="725" width="256" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="7a0-0d-Lsp"/>
+                                    <constraint firstAttribute="height" constant="62" id="Jor-dC-X8y"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3204087317" green="0.1724791229" blue="0.47181248660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Jup">
+                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="jupButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fag-Ms-YFY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yQa-Wp-CdE" firstAttribute="centerX" secondItem="P26-b7-Dg3" secondAttribute="centerX" id="4RU-Y2-i4L"/>
+                            <constraint firstItem="P26-b7-Dg3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NgM-0f-UtD"/>
+                            <constraint firstItem="Tyz-Y4-dMF" firstAttribute="top" secondItem="PjU-pN-J1J" secondAttribute="bottom" constant="48" id="RTz-hj-YgX"/>
+                            <constraint firstItem="yQa-Wp-CdE" firstAttribute="leading" secondItem="Tyz-Y4-dMF" secondAttribute="leading" id="caf-dr-pcu"/>
+                            <constraint firstItem="PjU-pN-J1J" firstAttribute="top" secondItem="yQa-Wp-CdE" secondAttribute="bottom" constant="46" id="dKG-7V-DHQ"/>
+                            <constraint firstItem="yQa-Wp-CdE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="404" id="f6A-WK-8xt"/>
+                            <constraint firstItem="P26-b7-Dg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s1a-Gz-8Bj"/>
+                            <constraint firstItem="yQa-Wp-CdE" firstAttribute="leading" secondItem="PjU-pN-J1J" secondAttribute="leading" id="w0w-59-gmr"/>
+                            <constraint firstItem="yQa-Wp-CdE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZb-5g-3e8"/>
+                            <constraint firstItem="P26-b7-Dg3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-103" id="zyF-xV-juc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zJJ-Si-QLc"/>
+                    <connections>
+                        <outlet property="BhagvadGitaBtn" destination="yQa-Wp-CdE" id="J9Y-6c-Lii"/>
+                        <outlet property="jupBtn" destination="Tyz-Y4-dMF" id="pWu-aG-HZu"/>
+                        <outlet property="quotesBtn" destination="PjU-pN-J1J" id="Ank-On-cMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054.1984732824426" y="-34.507042253521128"/>
+        </scene>
+        <!--JupVC-->
+        <scene sceneID="ggm-Ju-hoN">
+            <objects>
+                <viewController storyboardIdentifier="JupVC" id="uPI-Ki-BSd" customClass="JupVC" customModule="HDBhagvadBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="haz-DN-ecd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQC-DS-kZ6">
+                                <rect key="frame" x="117" y="363" width="159" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="jgy-Qx-LI9"/>
+                                    <constraint firstAttribute="width" constant="159" id="v9L-T9-Zmg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch on screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M61-uF-zW2">
+                                <rect key="frame" x="133.66666666666666" y="797" width="125.99999999999997" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9sb-Dk-GRP"/>
+                                    <constraint firstAttribute="width" constant="126" id="B2F-UQ-RlV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-T4-sHx">
+                                <rect key="frame" x="309" y="127" width="68" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Ea5-EN-fLu"/>
+                                    <constraint firstAttribute="width" constant="68" id="NBm-oK-0GV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="uPI-Ki-BSd" eventType="touchUpInside" id="DGC-yH-sv4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Beq-9d-pe7"/>
+                        <color key="backgroundColor" red="0.30327910180000001" green="0.16770195960000001" blue="0.44000139830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sbo-T4-sHx" firstAttribute="top" secondItem="Beq-9d-pe7" secondAttribute="top" constant="68" id="S3X-sF-ka7"/>
+                            <constraint firstItem="M61-uF-zW2" firstAttribute="centerX" secondItem="haz-DN-ecd" secondAttribute="centerX" id="S8p-1m-CjE"/>
+                            <constraint firstItem="xQC-DS-kZ6" firstAttribute="centerX" secondItem="M61-uF-zW2" secondAttribute="centerX" id="ihU-0B-FQJ"/>
+                            <constraint firstItem="sbo-T4-sHx" firstAttribute="trailing" secondItem="haz-DN-ecd" secondAttribute="trailingMargin" id="noq-4a-kqS"/>
+                            <constraint firstItem="xQC-DS-kZ6" firstAttribute="centerY" secondItem="haz-DN-ecd" secondAttribute="centerY" id="qgx-Ze-sl8"/>
+                            <constraint firstItem="M61-uF-zW2" firstAttribute="bottom" secondItem="Beq-9d-pe7" secondAttribute="bottom" id="xeR-N6-Xwq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="xQC-DS-kZ6" id="Q5b-Ee-JhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGv-sQ-Wap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="674.64788732394368"/>
+        </scene>
+        <!--QuotesVC-->
+        <scene sceneID="Kao-uZ-Zja">
+            <objects>
+                <viewController storyboardIdentifier="QuotesVC" id="Ltw-uR-oKF" customClass="QuotesVC" customModule="HDBhagvadBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GIs-dR-cfv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Quotes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0E-it-fSO">
+                                <rect key="frame" x="15" y="89" width="161" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-NA-5Ph">
+                                <rect key="frame" x="0.0" y="154" width="393" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30327910180000001" green="0.16770195960000001" blue="0.44000139830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="xMJ-gg-VZL" customClass="quotesTableCell" customModule="HDBhagvadBook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xMJ-gg-VZL" id="GLA-yK-KCX">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBq-iB-ffw">
+                                                    <rect key="frame" x="20" y="11" width="353" height="98"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.30327910180000001" green="0.16770195960000001" blue="0.44000139830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="quotesLableOutlet" destination="rBq-iB-ffw" id="mtq-fv-PcQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ltw-uR-oKF" id="IMR-pU-w0g"/>
+                                    <outlet property="delegate" destination="Ltw-uR-oKF" id="Elt-jL-Fmh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yse-gh-nDj"/>
+                        <color key="backgroundColor" red="0.30327910180000001" green="0.16770195960000001" blue="0.44000139830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qQ-ch-nnp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875.5725190839694" y="674.64788732394368"/>
+        </scene>
+        <!--Shlok DetailVC-->
+        <scene sceneID="Tls-i3-GDg">
+            <objects>
+                <viewController storyboardIdentifier="ShlokDetailVC" id="JOy-Ir-tY8" customClass="ShlokDetailVC" customModule="HDBhagvadBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGW-6S-aru">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WP-CR-xbb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-gP-yDL">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1702"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapter Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgS-hX-0gH">
+                                                <rect key="frame" x="8" y="72" width="250" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="28"/>
+                                                <color key="textColor" red="0.98984760049999998" green="0.94217187170000005" blue="0.72063559290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapter Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAq-n6-9go">
+                                                <rect key="frame" x="8" y="118" width="188" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapter Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvb-z5-hXk">
+                                                <rect key="frame" x="8" y="178" width="213" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="28"/>
+                                                <color key="textColor" red="0.98984760049999998" green="0.94217187170000005" blue="0.72063559290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapter Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PZ-RQ-ciW">
+                                                <rect key="frame" x="8" y="224" width="250" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shlok" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAD-hd-7bE">
+                                                <rect key="frame" x="8" y="286" width="82" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="28"/>
+                                                <color key="textColor" red="0.98984760049999998" green="0.94217187170000005" blue="0.72063559290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyn-YO-Z2N">
+                                                <rect key="frame" x="8" y="332" width="377" height="561"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chl-i3-cl8">
+                                                <rect key="frame" x="8" y="934" width="377" height="726"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.30327910180000001" green="0.16770195960000001" blue="0.44000139830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30327910180000001" green="0.16770195960000001" blue="0.44000139830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rY4-gP-yDL" firstAttribute="leading" secondItem="2WP-CR-xbb" secondAttribute="leading" id="1fl-6g-4gs"/>
+                                    <constraint firstItem="rY4-gP-yDL" firstAttribute="width" secondItem="2WP-CR-xbb" secondAttribute="width" id="7Hu-c1-Nyj"/>
+                                    <constraint firstItem="rY4-gP-yDL" firstAttribute="height" secondItem="2WP-CR-xbb" secondAttribute="height" constant="850" id="AWE-ft-3QZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="rY4-gP-yDL" secondAttribute="bottom" id="TkC-Z2-gxl"/>
+                                    <constraint firstItem="rY4-gP-yDL" firstAttribute="top" secondItem="2WP-CR-xbb" secondAttribute="top" id="XLz-jP-nmr"/>
+                                    <constraint firstAttribute="trailing" secondItem="rY4-gP-yDL" secondAttribute="trailing" id="wBB-fi-Aqo"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1W7-Y9-5BZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2WP-CR-xbb" secondAttribute="bottom" id="IcI-ne-u29"/>
+                            <constraint firstItem="2WP-CR-xbb" firstAttribute="trailing" secondItem="1W7-Y9-5BZ" secondAttribute="trailing" id="JoG-yk-ixd"/>
+                            <constraint firstItem="2WP-CR-xbb" firstAttribute="leading" secondItem="1W7-Y9-5BZ" secondAttribute="leading" id="StX-i2-8sK"/>
+                            <constraint firstItem="2WP-CR-xbb" firstAttribute="top" secondItem="dGW-6S-aru" secondAttribute="top" id="ivh-7I-azr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chapNameLableOutlet" destination="0PZ-RQ-ciW" id="3Sc-KP-rol"/>
+                        <outlet property="chapNumbereLableOutlet" destination="JAq-n6-9go" id="USB-Up-Nlu"/>
+                        <outlet property="englishShlokLableOutlet" destination="Chl-i3-cl8" id="rWj-aE-ndF"/>
+                        <outlet property="hindiShlokLableOutlet" destination="Uyn-YO-Z2N" id="DZo-AK-Z3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1P-u4-emY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641.9847328244273" y="-35.211267605633807"/>
+        </scene>
+        <!--Bhagvad GitaS ChVC-->
+        <scene sceneID="MCB-Bp-p5x">
+            <objects>
+                <viewController storyboardIdentifier="BhagvadGitaSChVC" id="65c-at-Ic7" customClass="BhagvadGitaSChVC" customModule="HDBhagvadBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7aU-9W-I1g">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Chapter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0w-6o-7nz">
+                                <rect key="frame" x="15" y="89" width="170" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-RX-QAP">
+                                <rect key="frame" x="0.0" y="154" width="393" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29464554790000003" green="0.15807771679999999" blue="0.42795485259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="BhagvadGitaChTC" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="88" id="MK9-vg-k43" customClass="BhagvadGitaChTC" customModule="HDBhagvadBook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MK9-vg-k43" id="ZYn-Lq-jXU">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGK-eT-Kpf">
+                                                    <rect key="frame" x="69" y="11" width="300" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KE2-u1-xCB">
+                                                    <rect key="frame" x="16" y="11" width="43" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.29464554790000003" green="0.15807771679999999" blue="0.42795485259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="listLableOutlet" destination="DGK-eT-Kpf" id="BKv-Kw-e2F"/>
+                                            <outlet property="numberLableOutlet" destination="KE2-u1-xCB" id="d8u-AN-fui"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="65c-at-Ic7" id="al9-HY-DgO"/>
+                                    <outlet property="delegate" destination="65c-at-Ic7" id="9uY-cI-85w"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JTa-t6-bTK"/>
+                        <color key="backgroundColor" red="0.29464554790000003" green="0.15807771679999999" blue="0.42795485259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="bagvatGitaTableView" destination="IjG-RX-QAP" id="sxk-Ux-KCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euZ-YY-Tz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875.5725190839694" y="-35.211267605633807"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H8I-Kg-NpB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GOV-ji-1te" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w4j-2v-F4s">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zcK-F8-mDm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFk-mg-CTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HD-wallpaper-shree-krishna-bhagavad-gita-lord-shiva-mahabharata-ramayan" width="800" height="1424"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
